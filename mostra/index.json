@@ -1,0 +1,241 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "http://localhost/capua/mostra/index.json",
+  "type": "Manifest",
+  "items": [
+    {
+      "id": "http://localhost/capua/mostra/index.json/canvas/0",
+      "type": "Canvas",
+      "items": [
+        {
+          "id": "http://localhost/capua/mostra/index.json/canvas/0/annotationpage/0",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://localhost/capua/mostra/index.json/canvas/0/annotation/0",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "http://localhost/capua/mostra/_arco_capua1/arco_capua1.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "label": {
+                  "@none": [
+                    "Arco di Capua"
+                  ]
+                },
+                "width": 802,
+                "height": 602
+              },
+              "target": "http://localhost/capua/mostra/index.json/canvas/0"
+            }
+          ]
+        }
+      ],
+      "label": {
+        "@none": [
+          "Arco di Capua"
+        ]
+      },
+      "width": 802,
+      "height": 602,
+      "thumbnail": [
+        {
+          "id": "http://localhost/capua/mostra/_arco_capua1/thumb.jpeg",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "id": "http://localhost/capua/mostra/index.json/canvas/1",
+      "type": "Canvas",
+      "otherContent": [
+					{
+					"@id": "http://localhost/capua/mostra/al-demo.json",
+					"@type": "sc:AnnotationList"
+					}
+				]
+      ,
+      
+      
+      "items": [
+        {
+          "id": "http://localhost/capua/mostra/index.json/canvas/1/annotationpage/0",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://localhost/capua/mostra/index.json/canvas/1/annotation/0",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "http://localhost/capua/mostra/_arco_capua2/Arco di Capua_2.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "label": {
+                  "@none": [
+                    "L’arco di Capua e i suoi restauri"
+                  ]
+                },
+                "width": 1133,
+                "height": 697
+              },
+              "target": "http://localhost/capua/mostra/index.json/canvas/1"
+            }
+          ]
+        }
+      ],
+      
+          
+      "label": {
+        "@none": [
+          "L’arco di Capua e i suoi restauri"
+        ]
+      },
+      "width": 1133,
+      "height": 697,
+      "thumbnail": [
+        {
+          "id": "http://localhost/capua/mostra/_arco_capua2/thumb.jpeg",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "id": "http://localhost/capua/mostra/index.json/canvas/2",
+      "type": "Canvas",
+      "items": [
+        {
+          "id": "http://localhost/capua/mostra/index.json/canvas/2/annotationpage/0",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://localhost/capua/mostra/index.json/canvas/2/annotation/0",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "http://localhost/capua/mostra/_arco_capua3/Arco di Capua_3.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "label": {
+                  "@none": [
+                    "Un’ipotesi ricostruttiva dell’arco"
+                  ]
+                },
+                "width": 1408,
+                "height": 1447
+              },
+              "target": "http://localhost/capua/mostra/index.json/canvas/2"
+            }
+          ]
+        }
+      ],
+      "label": {
+        "@none": [
+          "Un’ipotesi ricostruttiva dell’arco"
+        ]
+      },
+      "width": 1408,
+      "height": 1447,
+      "thumbnail": [
+        {
+          "id": "http://localhost/capua/mostra/_arco_capua3/thumb.jpeg",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "id": "http://localhost/capua/mostra/index.json/canvas/3",
+      "type": "Canvas",
+      "items": [
+        {
+          "id": "http://localhost/capua/mostra/index.json/canvas/3/annotationpage/0",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://localhost/capua/mostra/index.json/canvas/3/annotation/0",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "http://localhost/capua/mostra/_arco_capua4/Arco di Capua_4.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "label": {
+                  "@none": [
+                    "La veduta dell’arco di Carlo Labruzzi"
+                  ]
+                },
+                "width": 1154,
+                "height": 817
+              },
+              "target": "http://localhost/capua/mostra/index.json/canvas/3"
+            }
+          ]
+        }
+      ],
+      "label": {
+        "@none": [
+          "La veduta dell’arco di Carlo Labruzzi"
+        ]
+      },
+      "width": 1154,
+      "height": 817,
+      "thumbnail": [
+        {
+          "id": "http://localhost/capua/mostra/_arco_capua4/thumb.jpeg",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "id": "http://localhost/capua/mostra/index.json/canvas/4",
+      "type": "Canvas",
+      "items": [
+        {
+          "id": "http://localhost/capua/mostra/index.json/canvas/4/annotationpage/0",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://localhost/capua/mostra/index.json/canvas/4/annotation/0",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "http://localhost/capua/mostra/_arco_capua5/Arco di Capua_5.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "label": {
+                  "@none": [
+                    "Dipinto del pittore Giovanni Fattori, Difesa di Porta Capuana o Battaglia del Volturno"
+                  ]
+                },
+                "width": 480,
+                "height": 270
+              },
+              "target": "http://localhost/capua/mostra/index.json/canvas/4"
+            }
+          ]
+        }
+      ],
+      "label": {
+        "@none": [
+          "Dipinto del pittore Giovanni Fattori, Difesa di Porta Capuana o Battaglia del Volturno"
+        ]
+      },
+      "width": 480,
+      "height": 270,
+      "thumbnail": [
+        {
+          "id": "http://localhost/capua/mostra/_arco_capua5/thumb.jpeg",
+          "type": "Image"
+        }
+      ]
+    }
+  ],
+  "label": {
+    "@none": [
+      "mostra"
+    ]
+  }
+}

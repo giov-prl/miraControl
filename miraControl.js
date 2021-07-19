@@ -1,4 +1,4 @@
-window.document.body.insertAdjacentHTML( 'afterbegin', '<div id="conversejs" style="display:block;box-sizing: border-box;z-index:1031;bottom:5px;margin:0;right:10px;left:0;height:3em;position:fixed;padding-left: env(safe-area-inset-left);padding-right:env(safe-area-inset-right);"><div style="z-index: 1031;position: fixed;top: 10em;right: 260px;display: flex;flex-wrap: wrap;"><div  class="flyout box-flyout" style="width:250px;display: flex;flex-direction: column; justify-content: space-between;box-shadow: 1px 3px 5px 3px rgb(0 0 0 / 40%);z-index: 2;overflow: hidden; border-radius: 0;position:absolute;flex-direction: column;"><div class="player"><video class="vid" preload="none" poster="videoprev.png"><source src="video.mp4" type="video/mp4"><source src="video.mp4" type="video/webm"></video></div></div></div></div>' );
+window.document.body.insertAdjacentHTML( 'afterbegin', '<div id="conversejs" style="display:block;box-sizing: border-box;z-index:1031;bottom:5px;margin:0;right:10px;left:0;height:3em;position:fixed;padding-left: env(safe-area-inset-left);padding-right:env(safe-area-inset-right);"><div style="z-index: 1031;position: fixed;top: 10em;left: 80px;display: flex;flex-wrap: wrap;"><div  class="flyout box-flyout" style="width:250px;display: flex;flex-direction: column; justify-content: space-between;box-shadow: 1px 3px 5px 3px rgb(0 0 0 / 40%);z-index: 2;overflow: hidden; border-radius: 0;position:absolute;flex-direction: column;"><div class="player"><video class="vid" preload="none" poster="videoprev.png"><source src="video.mp4" type="video/mp4"><source src="video.mp4" type="video/webm"></video></div></div></div></div>' );
 //window.document.body.insertAdjacentHTML( 'afterbegin', '<div style="position:absolute;z-index:1040;bottom:10px;width:100%;color:white" ><marquee id="scrolling_text" behavior="scroll" direction="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget sem non lacus condimentum dictum quis id tortor.</marquee></div>' );
 //window.document.body.insertAdjacentHTML('afterbegin0', '<p>Text Fits</p><div class="marquee"><div class="text">Text Here</div></div><p>Text overflows</p><div class="marquee"><div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget sem non lacus condimentum dictum quis id tortor.</div></div>')
 
@@ -50,7 +50,7 @@ window.document.body.insertAdjacentHTML('afterbegin', '<body> <style> @keyframes
 			//{	
 			if (precedentCanvas != currentCanvas && json.canvas[currentCanvas].name != "no_canvas")
 			eval("miradorInstance.store.dispatch(Mirador.actions.setCanvas('main_window', 'http://localhost/capua/mostra/index.json/canvas/" + currentCanvas.toString() + "'))");
-			else alert(json.canvas[currentCanvas].videos[i].action.type);
+			//else alert(json.canvas[currentCanvas].videos[i].action.type);
 			switch (json.canvas[currentCanvas].videos[i].action.type)
 			
 				{	
@@ -162,12 +162,14 @@ window.document.body.insertAdjacentHTML('afterbegin', '<body> <style> @keyframes
 		while (true){
 			for (i = 0; i< json.canvas[currentCanvas].videos.length; i++)
 				if (json.canvas[currentCanvas].videos[i].intent == pred)
-				{	alert("found");
+				{	//alert("found");
 				//alert(currentCanvas);
 				//alert(precedentCanvas);
 					prepare();
 					return;
 				}
+				if (currentCanvas == json.canvas.length - 1)
+				return;
 				currentCanvas++;
 		}
 		

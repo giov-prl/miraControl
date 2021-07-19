@@ -190,7 +190,7 @@ https://github.com/IIIF/mirador/wiki/Complete-Configuration-API#loaded-objects
     <label for="msg"><b>Message</b></label>
     <textarea placeholder="Type message.." name="msg" id="msg" required></textarea>
 
-    <button type="submit" onclick="sendMessage(msg.value)" class="btn">Send</button>
+    <button type="submit" onclick="sendMessage(msg.value)" id="button" class="btn">Send</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </div>
 </div>
@@ -200,6 +200,20 @@ https://github.com/IIIF/mirador/wiki/Complete-Configuration-API#loaded-objects
 var post;
 var predict;
 	
+
+// Get the input field
+var input = document.getElementById("msg");
+
+// Execute a function when the user releases a key on the keyboard
+input.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    //event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("button").click();
+  }
+}); 
 
 
 function openForm() {
@@ -211,12 +225,13 @@ function closeForm() {
 }
 
 function sendMessage(chat) {
-  nchat = '{ "sender" : "giovanni", "message" : "' + chat + '"}' ;
-
+  nchat = '{ "sender" : "giovanni", "message" : "' + chat.normalize("NFD").replace(/[^a-zA-Z0-9]/g, " ") + '"}' ;
+  msg.value = "";
   post = new XMLHttpRequest();
   post.open("POST", "http://193.206.103.85:5000/webhooks/rest/webhook", false);
   post.send(nchat);
-  //alert(JSON.parse(post.responseText)[0].text);
+  alert(JSON.parse(post.responseText)[0].text);
+  alert (nchat);
   console.log(JSON.parse(post.responseText));
   
 

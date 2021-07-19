@@ -3,49 +3,75 @@
   "@id": "http://localhost/capua/mostra/al-demo.json",
   "@type": "sc:AnnotationList",
   "resources": [
+   
     {
-	  "@context": "http://iiif.io/api/presentation/2/context.json",
-	  "@id": "http://localhost/annotations/1",
-      "@type": "oa:Annotation",
-      "motivation": ["oa:commenting"],
-      "resource":[{
-        "@type": "dctypes:Text",
-        "chars": "<p>My first text annotation for canvas 1</p>",
-        "format": "text/html"
-      }],
-      "on": 
-      {
-		  "@type": "oa:SpecificResource",
-		  "full": "http://localhost/capua/mostra/index.json/canvas/1",
-			"selector": {
-			"@type": "oa:FragmentSelector",
-			"value": "xywh=200,100,150,100"
-			},
-			"within": {
-			"@id": "http://localhost/capua/mostra/index.json",
-			"@type": "sc:Manifest"
-			}
-	
-	  }
-    },
+      "@context": "http://iiif.io/api/presentation/2/context.json",
+      "@id": "http://localhost/annotations/1",
+        "@type": "oa:Annotation",
+        "motivation": ["oa:commenting"],
+        "resource":[{
+          "@type": "dctypes:Text",
+          "chars": "<p>My first text annotation for canvas 1</p>",
+          "format": "text/html"
+        }],
+        "on": 
+        {
+        "@type": "oa:SpecificResource",
+        "full": "http://localhost/capua/mostra/index.json/canvas/1",
+        "selector": {
+        "@type": "oa:FragmentSelector",
+        "value": "xywh=200,100,150,100"
+        },
+        "within": {
+        "@id": "http://localhost/capua/mostra/index.json",
+        "@type": "sc:Manifest"
+        }
     
+      }
+      },
+      
+      {
+      "@context": "http://iiif.io/api/presentation/2/context.json",
+      "@id": "http://localhost/annotations/2",
+        "@type": "oa:Annotation",
+        "motivation": ["oa:commenting"],
+        "resource":[{
+          "@type": "dctypes:Text",
+          "chars": "<p>My second text annotation for canvas 1</p>",
+          "format": "text/html"
+        }],
+        "on": 
+        {
+        "@type": "oa:SpecificResource",
+        "full": "http://localhost/capua/mostra/index.json/canvas/1",
+        "selector": {
+        "@type": "oa:FragmentSelector",
+        "value": "xywh=500,200,150,100"
+        },
+        "within": {
+        "@id": "http://localhost/capua/mostra/index.json",
+        "@type": "sc:Manifest"
+        }
+    
+      }
+      },
     {
 	  "@context": "http://iiif.io/api/presentation/2/context.json",
-	  "@id": "http://localhost/annotations/2",
+	  "@id": "http://localhost/annotations/3",
       "@type": "oa:Annotation",
       "motivation": ["oa:commenting"],
       "resource":[{
         "@type": "dctypes:Text",
-        "chars": "<p>My second text annotation for canvas 1</p>",
+        "chars": "<p>prova</p>",
         "format": "text/html"
       }],
       "on": 
       {
 		  "@type": "oa:SpecificResource",
-		  "full": "http://localhost/capua/mostra/index.json/canvas/1",
+		  "full": "http://localhost/capua/mostra/index.json/canvas/2",
 			"selector": {
 			"@type": "oa:FragmentSelector",
-			"value": "xywh=500,200,150,100"
+			"value": "xywh=450,822,927,570"
 			},
 			"within": {
 			"@id": "http://localhost/capua/mostra/index.json",
@@ -53,6 +79,7 @@
 			}
 	
 	  }
+
     }
   ]
 }

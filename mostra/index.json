@@ -52,13 +52,13 @@
     {
       "id": "http://localhost/capua/mostra/index.json/canvas/1",
       "type": "Canvas",
-      "otherContent": [
-					{
-					"@id": "http://localhost/capua/mostra/al-demo.json",
-					"@type": "sc:AnnotationList"
-					}
-				]
-      ,
+       "otherContent": [
+        {
+        "@id": "http://localhost/capua/mostra/al-demo.json",
+        "@type": "sc:AnnotationList"
+        }
+      ]
+    ,
       
       
       "items": [
@@ -105,7 +105,14 @@
     },
     {
       "id": "http://localhost/capua/mostra/index.json/canvas/2",
-      "type": "Canvas",
+      "type": "Canvas", 
+      "otherContent": [
+        {
+        "@id": "http://localhost/capua/mostra/al-demo.json",
+        "@type": "sc:AnnotationList"
+        }
+      ]
+    ,
       "items": [
         {
           "id": "http://localhost/capua/mostra/index.json/canvas/2/annotationpage/0",
@@ -149,6 +156,13 @@
     {
       "id": "http://localhost/capua/mostra/index.json/canvas/3",
       "type": "Canvas",
+      "otherContent": [
+					{
+					"@id": "http://localhost/capua/mostra/al-demo.json",
+					"@type": "sc:AnnotationList"
+					}
+				]
+      ,
       "items": [
         {
           "id": "http://localhost/capua/mostra/index.json/canvas/3/annotationpage/0",
@@ -192,6 +206,7 @@
     {
       "id": "http://localhost/capua/mostra/index.json/canvas/4",
       "type": "Canvas",
+      
       "items": [
         {
           "id": "http://localhost/capua/mostra/index.json/canvas/4/annotationpage/0",
